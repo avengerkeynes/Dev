@@ -1,3 +1,4 @@
+#linux加域控
 yum install -y sssd
 yum install -y realmd
 yum install -y oddjob
