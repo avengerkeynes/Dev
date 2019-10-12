@@ -1,0 +1,5 @@
+yum install epel-release
+yum localinstall rpmforge-release-0.5.3-1.el6.rf.x86_64.rpm
+wget http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
+yum install mplayer
+yum install vlc
