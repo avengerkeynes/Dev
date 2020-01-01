@@ -1,0 +1,4 @@
+WARING:REMOTE HOST IDENTIFICATION HAS CHANGED!
+
+解决方法：
+ssh-keygen -R 目标ip
