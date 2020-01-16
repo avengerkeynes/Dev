@@ -1,0 +1,29 @@
+删除所有关闭的容器
+
+docker ps -a | grep Exit | cut -d ' ' -f 1 | xargs docker rm
+
+删除所有dangling镜像(即无tag的镜像)：
+
+docker rmi $(docker images | grep "^<none>" | awk "{print $3}")
+
+删除所有dangling数据卷(即无用的volume)：
+
+docker volume rm $(docker volume ls -qf dangling=true)
+
+清理容器内的垃圾
+docker system df  -v
+1
+2
+可以先用这个找出异常的容器
+
+或者到相关目录执行du命令也行，如：
+
+cd /var/lib/docker/overlay2
+du --max-depth=1 -h ./
+
+cd /var/lib/docker/containers
+du --max-depth=1 -h ./
+
+
+清理docker日志文件
+ls -lh $(find /var/lib/docker/containers/ -name *-json.log)
