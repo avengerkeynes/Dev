@@ -1,2 +1,3 @@
 docker run -p 3306:3306 --name JY_mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql
 #添加启动项
+docker container update --restart=always
