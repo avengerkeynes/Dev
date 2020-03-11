@@ -1,0 +1,11 @@
+#/etc/yum.repos.d/CentOS-AppStream.repos
+baseurl=https://mirrors.aliyun.com/centos/$releasever/AppStream/$basearch/os/
+#/etc/yum.repos.d/CentOS-Base.repo
+baseurl=https://mirrors.aliyun.com/centos/$releasever/BaseOS/$basearch/os/
+#/etc/yum.repos.d/CentOS-Extras.repo
+baseurl=https://mirrors.aliyun.com/centos/$releasever/extras/$basearch/os/
+
+$dnf -y install epel-release
+$dnf clean all
+$dnf makecache
+$dnf repolist
