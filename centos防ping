@@ -1,0 +1,8 @@
+#编辑配置
+vi /etc/sysctl.conf
+net.ipv4.icmp_echo_ignore_all = 1
+#刷新配置
+sysctl -p
+
+#启用ping
+net.ipv4.icmp_echo_ignore_all = 0
