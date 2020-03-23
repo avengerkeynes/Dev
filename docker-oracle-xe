@@ -1,0 +1,4 @@
+docker run -d -p 49160:22 -p 49161:1521 -e ORACLE_ALLOW_REMOTE=true docker.io/wnameless/oracle-xe-11g-r2
+
+#username:system
+#password:oracle
