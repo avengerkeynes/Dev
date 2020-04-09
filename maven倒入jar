@@ -1,7 +1,0 @@
-mvn install:install-file -DgroupId=com.oracle -DartifactId=ojdbc8 -Dversion=12.2.0.1 -Dpackaging=jar -Dfile=/home/keynes/.m2/resportory/ojdbc8.jar
-
-<dependency>
-  <groupId>com.oracle</groupId>
-  <artifactId>ojdbc8</artifactId>
-  <version>12.2.0.1</version>
-</dependency>
