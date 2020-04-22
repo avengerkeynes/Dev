@@ -1,0 +1,2 @@
+tar --numeric-owner --exclude=/proc --exclude=/sys  -cvf  centos7.tar  /
+docker import 文件名 keynesxu/centos:latest
