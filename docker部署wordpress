@@ -5,4 +5,4 @@
 mariadb>create user 'wordpress'@'%' identified by 'password';
 mariadb>grant all privileges on *.* to wordpress;
 mariadb>flush privileges;
->docker run -d --link mariadb -p 8080:80 --name wordpress wordpress
+>docker run -d --link mariadb -e WORDPRESS_DB_HOST=mysql:3306 -p 8080:80 --name wordpress wordpress
