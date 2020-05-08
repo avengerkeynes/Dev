@@ -1,0 +1,8 @@
+启动mariadb
+>docker run -d --name mariadb -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 --restart=always mariadb
+>docker exec -it mariadb /bin/bash
+>mysql -u root -p
+mariadb>create user 'wordpress'@'%' identified by 'password';
+mariadb>grant all privileges on *.* to wordpress;
+mariadb>flush privileges;
+>docker run --link mariadb -p 8080:80 --name wordpress wordpress
