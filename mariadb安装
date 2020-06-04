@@ -18,6 +18,6 @@ chkconfig --add mysqld
 chkconfig mysqld on
 systemctl stop firewalld
 systemctl disable firewalld
-seenforce 0
+setenforce 0
 ./bin/mysql_safe --datadir=/data
 systemctl restart mysqld
