@@ -1,0 +1,6 @@
+从
+https://github.com/ziahamza/webui-aria2
+下载前端包
+将~/docs/所有复制到表面上来
+搭建httpd或ngix服务器
+nohup aria2c --enable-rpc --rpc-listen-all --rpc-secret xusheng880830
