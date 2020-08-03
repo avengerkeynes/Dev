@@ -1,0 +1,13 @@
+#假设数据文件为db.sqlite3 数据库中的表为tb1和tb2
+
+#导出db.SQL
+sqlite> .open db.sqlite3
+sqlite> .output db.SQL
+sqlite> .dump
+sqlite> .exit
+
+#导出tb1
+sqlite> .open db.sqlite3
+sqlite> .output db.SQL
+sqlite> .dump tb1
+sqlite> .exit
