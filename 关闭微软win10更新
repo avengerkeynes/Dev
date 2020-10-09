@@ -1,0 +1,5 @@
+注册表:HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WaaSMedicSvc
+start修改为0
+FailureActions:
+修改00010参数第五列为00 
+修改00018参数第五列为00
