@@ -8,3 +8,5 @@ lvdisplay #查看逻辑卷
 lvextend -l +100%free /dev/mapper/centos-home #扩展逻辑卷
 xfs_growfs /dev/mapper/centos-home #动态格式化扩容磁盘
 df -hT 查看结果
+
+lsblk查看逻辑卷归属情况
