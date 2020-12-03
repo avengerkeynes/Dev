@@ -1,0 +1,17 @@
+sudo vi /etc/yum.repos.d/openEuler_x86_64.repo
+
+[base]
+name=base
+baseurl=https://repo.openeuler.org/openEuler-20.03-LTS/OS/x86_64/
+enabled=1
+gpgcheck=0
+
+yum makecache
+
+yum install gnome-shell gdm gnome-session gnome-terminal -y
+systemctl enable gdm.service                  //设置gdm自启
+systemctl set-default graphical.target        //修改启动级别为图形化
+
+wget https://zycxzx.obs.cn-east-3.myhuaweicloud.com/Xsession
+mv Xsession /etc/gdm/
+chmod -R 777 /etc/gdm/Xsession               //这个操作的原因是openEuler源里的gdm文件Xsession有问题，从网上下一个替换即可，否则图形化无法正常登录
