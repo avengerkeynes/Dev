@@ -1,0 +1,7 @@
+timedatectl set-ntp true
+nano /etc/pacman.d/mirrorlist    ##Server = http://mirrors.163.com/archlinux/$repo/os/$arch
+fdisk /dev/sda
+mkfs.fat -F32 /dev/sda1
+mkfs.ext4 /dev/sda2
+mkfs.ext4 /dev/sda3
+https://blog.csdn.net/r8l8q8/article/details/76516523
