@@ -1,0 +1,6 @@
+文件RunWeka.ini最后一行
+cp=%CLASSPATH%;C:/Program Files/Weka-3-8-5/lib/mariadb-java-client-2.7.2.jar
+
+weka.jar中,weka/experiment/DatabaseUtils.props
+#jdbcDriver=RmiJdbc.RJDriver,jdbc.idbDriver,org.gjt.mm.mysql.Driver,com.mckoi.JDBCDriver,org.hsqldb.jdbcDriver
+jdbcDriver=org.mariadb.jdbc.Driver
