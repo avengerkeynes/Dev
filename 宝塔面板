@@ -1,0 +1,6 @@
+centos安装宝塔
+yum install -y wget && wget -O install.sh http://download.bt.cn/install/install_6.0.sh && sh install.sh
+ubuntu/deepin
+wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh && sudo bash install.sh
+fedora
+wget -O install.sh http://download.bt.cn/install/install_6.0.sh && bash install.sh
