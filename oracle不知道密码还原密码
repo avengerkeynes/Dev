@@ -1,0 +1,4 @@
+SELECT B.PASSWORD   FROM DBA_USERS A, SYS.USER$ B
+ WHERE A.USER_ID = B.USER#  AND A.USERNAME = 'SS_IAU';
+ 得到散列
+ alter  user  Username  identified  by  values  '<备份的schema密文密码>' ; 
