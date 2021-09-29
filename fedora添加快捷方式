@@ -1,0 +1,10 @@
+在/usr/share/application/下添加 应用名.desktop文件
+vim 应用名.desktop
+[Desktop Entry]
+Name=Eclipse
+Comment=用Eclipse开发
+Exec=/usr/lib/eclispe/eclipse
+Icon=/usr/lib/eclipse/eclipse32.png
+Terminal=false
+Type=Application
+Categories=Application;Development;
