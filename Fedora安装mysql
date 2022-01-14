@@ -1,0 +1,13 @@
+dnf upgrade
+dnf update
+
+dnf install -y community-mysql-server
+
+systemctl start mysqld
+systemctl enable mysqld
+systemctl status mysqld
+
+mysql_secure_installation
+
+firewall-cmd --add-service=mysql --permanent
+firewall-cmd --reload
